@@ -1,0 +1,41 @@
+<div class="toolbar">
+    <ul>
+          <li><a [routerLink]='["/login"]'> Sair </a></li>
+          <li><a [routerLink]='["/listar"]'> Exibir lista</a></li>
+          <li><a [routerLink]='["/gerenciar"]'> Adicionar</a></li>
+    </ul>
+</div>
+
+
+
+<div align="center">
+
+    <div class="box">
+        <br>
+        <h1> Atualizar Cliente</h1>
+
+        <form class="form" [formGroup]="formulario"  (ngSubmit)="Atualizar()">
+            <p>
+                <label>Nome</label><br>
+                <input type="text" formControlName="nome" name="nome">
+            </p>
+            <p>
+                <label>Email</label><br>
+                <input type="email" formControlName="email" name="email">
+            </p>
+            <p>
+                <label>Limite de Credito</label><br>
+                <input type="number" formControlName="credito" name="credito">
+            </p>
+            <p>
+                <label>Situacao</label><br>
+                <input type="text" formControlName="situacao" name="situacao">
+            </p>
+            <br>
+            <div>
+                <button type="submit" [disabled]="formulario.invalid" >Confirmar</button>
+            </div>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div align="center">
+    <div class="box">
+        <br>
+        <h1>Faça Login</h1>
+        <img src="assets/login.png">
+
+        <form name="form1" class="form" (ngSubmit)="Login()">
+            <p>
+            <label> Usuário </label><br>
+            <input  type="text" name="usuario" [(ngModel)]="usuario" required>
+            </p>
+             <p>
+            <label> Senha </label><br>
+            <input type="password" name="senha" [(ngModel)]="senha"/>
+            </p>
+            {{ mensagem }}
+            <br>
+            <br>
+            <button [disabled]="form1.invalid" type="submit">Entrar</button>
+        </form>
+    </div>
+</div>
+

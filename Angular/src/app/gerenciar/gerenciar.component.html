@@ -1,0 +1,46 @@
+<div class="toolbar">
+        <ul>
+          <li><a [routerLink]='["/login"]'> Sair</a></li>
+          <li><a [routerLink]='["/listar"]'> Exibir lista</a></li>
+          <li><a [routerLink]='["/gerenciar"]'> Adicionar</a></li>
+        </ul>
+</div>
+
+<div align="center">
+    
+    <div class="box">
+    <br>
+    <h1> Adicionar Cliente</h1>
+
+    <form class="form" [formGroup]="formulario"  (ngSubmit)="Add()">
+        <p>
+            <label>Nome</label><br>
+            <input type="text" formControlName="nome" required>
+        </p>    
+        <p>
+            <label>Email</label><br>
+            <input name="email" type="email" formControlName="email" required>
+        </p> 
+        <p>
+            <label>Limite de Credito</label><br>
+            <input type="number" formControlName="credito" required>
+        </p> 
+        <p>  
+            <label>Situacao</label><br>
+            <input class="btn" type="button" (click)="ativo()"  value="Ativo">
+            <input id="esp" class="btn" type="button" (click)="inativo()"  value="Inativo">
+        </p>
+        <br>
+        <div>
+            <button type="submit" [disabled]="formulario.invalid ">Confirmar</button>
+        </div>
+    </form>
+    </div>
+</div>
+
+
+<!--   <p>
+            <label>Situacao</label><br>
+            <input type="text" formControlName="situacao">
+            </p> 
+        <p>-->

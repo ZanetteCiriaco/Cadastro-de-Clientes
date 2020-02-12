@@ -1,0 +1,34 @@
+<div class="toolbar">
+    <ul>
+      <li><a [routerLink]='["/login"]'> Sair</a></li>
+      <li><a [routerLink]='["/listar"]'> Exibir lista</a></li>
+      <li><a [routerLink]='["/gerenciar"]'> Adicionar</a></li>
+    </ul>
+</div>
+
+
+<div align="center">
+  <h1 id=fonteh1>Detalhes </h1>
+<br>
+<table border="1">
+    <tr>
+      <th>Código</th>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Crédito</th>
+      <th>Situação</th>
+    </tr>
+    <tr>
+      <td>{{ cliente.codigo }}</td>
+      <td>{{ cliente.nome }}</td>
+      <td>{{ cliente.email }}</td>
+      <td>{{ cliente.credito | currency }}</td>
+      <td>{{ cliente.situacao }}</td>
+    </tr>
+  </table>
+  <br>
+  <button class="apagar" (click)="Excluir(cliente.codigo)">Excluir</button>
+  <button id="esp" (click)="Atualizar()">Atualizar</button>
+</div>
+
+

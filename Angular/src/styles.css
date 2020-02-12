@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+    background-image: url('assets/fundo1.jpg');
+    background-color: #f4f4f4;
+}
+
+/* toolbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(10,23,55,0.7);
+    padding-right: 7%
+}
+  
+li {
+    float: right;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+table{
+    background-color: #fff;
+    color: black;
+    max-width: 700px;
+}
+a:hover{
+    color: #4717f6;
+}
+#fonteh1{
+    color: white;
+}
+button{
+    align-content: center;
+    width: 80px; color:#fff; background-color:#4717f6; padding: 8px 10px;
+    border: 0;
+    border-radius: 9px 9px;
+    cursor: pointer;
+}
+button:active{
+    position:relative;
+    top:2px;
+}
+.apagar:hover{
+    background-color: red;
+}
+button:hover {
+    background-color:  #6840f8;
+    /*background-color: #111;*/
+}
+.btn:active{
+    position:relative;
+    top:2px;
+}
+.btn:focus{
+    background-color: green;
+    color: white;
+}
+#esp:focus{
+    background-color: red;
+    color: white;
+}
+.box{
+  margin-top:5%;
+  width: 350px;
+  height: 430px;
+  background-color: rgba(10,23,55,0.7);
+  color: white;
+  border-radius: 10px 10px;
+  max-width: 400px;
+}
+.form{
+    text-align: left;
+    align-content: center;
+    align-items: center;
+    padding-left: 55px;
+}
+input{   
+    border-radius:8px;  
+    background:white; 
+    width:230px;
+    height: 25px;
+}
+img{
+    width: 90px;
+    height: 90px;
+}
+
+.btn{
+    width: 110px;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#esp{
+    margin-left: 15px;
+}
+

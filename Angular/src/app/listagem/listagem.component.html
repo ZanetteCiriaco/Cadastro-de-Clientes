@@ -1,0 +1,25 @@
+<div class="toolbar">
+    <ul>
+      <li><a [routerLink]='["/login"]'> Sair</a></li>
+      <li><a [routerLink]='["/listar"]'> Exibir lista</a></li>
+      <li><a [routerLink]='["/gerenciar"]'> Adicionar</a></li>
+    </ul>
+</div>
+
+<div align="center"> 
+    <h1 id="fonteh1">Lista de clientes</h1>
+    
+    <table border="1">
+        <tr>
+          <th>Código</th>
+          <th>Nome</th>
+        </tr>
+        <tr *ngFor="let cliente of listaClientes">
+          <td>{{ cliente.codigo }}</td>
+          <td><a [routerLink]='["/detalhe/", cliente.codigo]'>{{ cliente.nome }}</a></td>
+        </tr>
+      </table>
+</div>
+
+
+
